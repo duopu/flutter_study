@@ -32,48 +32,37 @@ class MyHomePage extends StatelessWidget {
       children: <Widget>[
         Container(
           height: 120,
-          width: 120,   //宽度是自适应的    设置没有效果
-          decoration: const BoxDecoration(
-            color: Colors.red
-          ),
+          width: 120, //宽度是自适应的    设置没有效果
+          decoration: const BoxDecoration(color: Colors.red),
         ),
         Container(
           height: 120,
-           width: 120,
-          decoration: const BoxDecoration(
-            color: Colors.yellow
-          ),
+          width: 120,
+          decoration: const BoxDecoration(color: Colors.yellow),
         ),
-         Container(
+        Container(
           height: 120,
-          decoration: const BoxDecoration(
-            color: Colors.orange
-          ),
-        ), Container(
+          decoration: const BoxDecoration(color: Colors.orange),
+        ),
+        Container(
           height: 120,
-          decoration: const BoxDecoration(
-            color: Colors.black
-          ),
-        ), Container(
+          decoration: const BoxDecoration(color: Colors.black),
+        ),
+        Container(
           height: 120,
-          decoration: const BoxDecoration(
-            color: Colors.blue
-          ),
-        ), Container(
+          decoration: const BoxDecoration(color: Colors.blue),
+        ),
+        Container(
           height: 120,
-          decoration: const BoxDecoration(
-            color: Colors.red
-          ),
-        ), Container(
+          decoration: const BoxDecoration(color: Colors.red),
+        ),
+        Container(
           height: 120,
-          decoration: const BoxDecoration(
-            color: Colors.pink
-          ),
-        ), Container(
+          decoration: const BoxDecoration(color: Colors.pink),
+        ),
+        Container(
           height: 120,
-          decoration: const BoxDecoration(
-            color: Colors.blueGrey
-          ),
+          decoration: const BoxDecoration(color: Colors.blueGrey),
         ),
       ],
     );

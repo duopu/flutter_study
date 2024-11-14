@@ -38,11 +38,14 @@ class MyHomePage extends StatelessWidget {
             decoration: const BoxDecoration(color: Colors.white),
             child: Column(
               children: [
-                   SizedBox(
-                    height: 80,
-                    child: Image.network("https://www.itying.com/images/flutter/1.png",fit: BoxFit.cover,),
-                   ),
-                   const Text("文字")
+                SizedBox(
+                  height: 80,
+                  child: Image.network(
+                    "https://www.itying.com/images/flutter/1.png",
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                const Text("文字")
               ],
             ),
           ),

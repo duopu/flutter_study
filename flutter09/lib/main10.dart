@@ -24,22 +24,21 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  List<String> list=[];
-  MyHomePage({Key? key}) : super(key: key){
+  List<String> list = [];
+  MyHomePage({Key? key}) : super(key: key) {
     for (var i = 0; i < 20; i++) {
-      list.add("我是第${i}条数据");
+      list.add("我是第$i条数据");
     }
-  } 
+  }
 
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount:list.length ,
-      itemBuilder: (context,index){
-        return ListTile(
-          title: Text(list[index]),
-        );
-      }
-    );
+        itemCount: list.length,
+        itemBuilder: (context, index) {
+          return ListTile(
+            title: Text(list[index]),
+          );
+        });
   }
 }

@@ -34,46 +34,36 @@ class MyHomePage extends StatelessWidget {
         Container(
           padding: const EdgeInsets.fromLTRB(0, 6, 0, 0),
           height: 44,
-          child: const Text(
-            "我是一个标题",
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22)),
+          child: const Text("我是一个标题",
+              textAlign: TextAlign.center, style: TextStyle(fontSize: 22)),
         ),
         Image.network("https://www.itying.com/images/flutter/3.png"),
-         Container(
+        Container(
           padding: const EdgeInsets.fromLTRB(0, 6, 0, 0),
           height: 44,
-          child: const Text(
-            "我是一个标题",
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22)),
+          child: const Text("我是一个标题",
+              textAlign: TextAlign.center, style: TextStyle(fontSize: 22)),
         ),
         Image.network("https://www.itying.com/images/flutter/2.png"),
-         Container(
+        Container(
           padding: const EdgeInsets.fromLTRB(0, 6, 0, 0),
           height: 44,
-          child: const Text(
-            "我是一个标题",
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22)),
+          child: const Text("我是一个标题",
+              textAlign: TextAlign.center, style: TextStyle(fontSize: 22)),
         ),
         Image.network("https://www.itying.com/images/flutter/4.png"),
-         Container(
+        Container(
           padding: const EdgeInsets.fromLTRB(0, 6, 0, 0),
           height: 44,
-          child: const Text(
-            "我是一个标题",
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22)),
+          child: const Text("我是一个标题",
+              textAlign: TextAlign.center, style: TextStyle(fontSize: 22)),
         ),
         Image.network("https://www.itying.com/images/flutter/5.png"),
-         Container(
+        Container(
           padding: const EdgeInsets.fromLTRB(0, 6, 0, 0),
           height: 44,
-          child: const Text(
-            "我是一个标题",
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22)),
+          child: const Text("我是一个标题",
+              textAlign: TextAlign.center, style: TextStyle(fontSize: 22)),
         ),
         Image.network("https://www.itying.com/images/flutter/6.png"),
       ],

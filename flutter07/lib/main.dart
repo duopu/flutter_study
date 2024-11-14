@@ -76,13 +76,9 @@ class MyHomePage extends StatelessWidget {
           color: Colors.black,
         ),
         SizedBox(height: 20),
-        Icon(
-          ItyingIcon.address
-        ),
-         SizedBox(height: 20),
-        Icon(
-          ItyingIcon.category
-        ),        
+        Icon(ItyingIcon.address),
+        SizedBox(height: 20),
+        Icon(ItyingIcon.category),
       ],
     );
   }

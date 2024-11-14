@@ -42,12 +42,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
         padding: const EdgeInsets.all(10),
-        itemCount:listData.length,
+        itemCount: listData.length,
         gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
           crossAxisSpacing: 10, //水平子Widget之间间 距
-          mainAxisSpacing: 10, //垂直子Widget之间间 距          
+          mainAxisSpacing: 10, //垂直子Widget之间间 距
           childAspectRatio: 0.9,
-          maxCrossAxisExtent: 120, 
+          maxCrossAxisExtent: 120,
         ),
         itemBuilder: _initGridViewData);
   }

@@ -76,14 +76,10 @@ class MyHomePage extends StatelessWidget {
           color: Colors.black,
         ),
         SizedBox(height: 20),
-        Icon(
-          ItyingIcon.address
-        ),
-         SizedBox(height: 20),
-        Icon(
-          ItyingIcon.category
-        ),   
-         SizedBox(height: 20),
+        Icon(ItyingIcon.address),
+        SizedBox(height: 20),
+        Icon(ItyingIcon.category),
+        SizedBox(height: 20),
         Icon(
           ItyingIcon.weixin,
           size: 40,
@@ -96,13 +92,9 @@ class MyHomePage extends StatelessWidget {
           color: Colors.black,
         ),
         SizedBox(height: 20),
-        Icon(
-          ItyingIcon.address
-        ),
-         SizedBox(height: 20),
-        Icon(
-          ItyingIcon.category
-        ),         
+        Icon(ItyingIcon.address),
+        SizedBox(height: 20),
+        Icon(ItyingIcon.category),
       ],
     );
   }

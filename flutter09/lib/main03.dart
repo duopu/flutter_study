@@ -43,13 +43,13 @@ class MyHomePage extends StatelessWidget {
         ListTile(
           leading: Icon(Icons.favorite, color: Colors.lightGreen),
           title: Text("我的收藏"),
-          trailing:Icon(Icons.chevron_right_sharp) ,
+          trailing: Icon(Icons.chevron_right_sharp),
         ),
         Divider(),
         ListTile(
           leading: Icon(Icons.people, color: Colors.black54),
           title: Text("在线客服"),
-          trailing:Icon(Icons.chevron_right_sharp) ,
+          trailing: Icon(Icons.chevron_right_sharp),
         ),
         Divider(),
       ],

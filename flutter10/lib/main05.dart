@@ -4,7 +4,7 @@ void main() {
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);  
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -41,13 +41,13 @@ class HomePage extends StatelessWidget {
               ],
             ),
         );
-    }); 
+    });
     return tempList.toList();
   }
 
   @override
   Widget build(BuildContext context) {
-    return GridView.count(  
+    return GridView.count(
       padding:const EdgeInsets.all(10),
       crossAxisSpacing:10,      //水平子Widget之间间 距
       mainAxisSpacing: 10,     //垂直子Widget之间间 距
