@@ -1,0 +1,8 @@
+name: xxx
+environment:
+  sdk: '^3.5.0'
+
+description: A new flutter module project.
+dependencies:
+  http: ^1.2.2
+  date_format: ^2.0.9
