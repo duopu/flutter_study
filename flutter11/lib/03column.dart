@@ -31,12 +31,15 @@ class HomePage extends StatelessWidget {
       width: double.infinity,
       height: double.infinity,
       color: Colors.black12,
-      child: Column(  
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,   
-        crossAxisAlignment: CrossAxisAlignment.end,     
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           IconContainer(Icons.home),
-          IconContainer(Icons.search,color: Colors.yellow,),
+          IconContainer(
+            Icons.search,
+            color: Colors.yellow,
+          ),
           IconContainer(
             Icons.ac_unit_sharp,
             color: Colors.orange,

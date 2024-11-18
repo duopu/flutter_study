@@ -48,7 +48,7 @@ class HomePage extends StatelessWidget {
             Expanded(
                 flex: 1,
                 child: SizedBox(
-                   height: 180,
+                  height: 180,
                   child: Column(
                     children: [
                       Expanded(

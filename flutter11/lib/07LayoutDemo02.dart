@@ -50,26 +50,26 @@ class HomePage extends StatelessWidget {
             Expanded(
                 flex: 1,
                 child: SizedBox(
-                   height: 180,
+                  height: 180,
                   child: Column(
                     children: [
                       Expanded(
                         flex: 1,
                         child: SizedBox(
-                          width:double.infinity ,
+                          width: double.infinity,
                           child: Image.network(
-                            "https://www.itying.com/images/flutter/3.png",
-                            fit: BoxFit.cover),
+                              "https://www.itying.com/images/flutter/3.png",
+                              fit: BoxFit.cover),
                         ),
                       ),
                       const SizedBox(height: 10),
                       Expanded(
                         flex: 2,
                         child: SizedBox(
-                          width:double.infinity ,
+                          width: double.infinity,
                           child: Image.network(
-                            "https://www.itying.com/images/flutter/4.png",
-                            fit: BoxFit.cover),
+                              "https://www.itying.com/images/flutter/4.png",
+                              fit: BoxFit.cover),
                         ),
                       )
                     ],

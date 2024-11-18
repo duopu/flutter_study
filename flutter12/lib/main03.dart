@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //获取设备的宽度和高度
-    final size =MediaQuery.of(context).size;
+    final size = MediaQuery.of(context).size;
 
     return Stack(
       children: [

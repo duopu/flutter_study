@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
       height: 300,
       color: Colors.red,
       child: const Align(
-        alignment: Alignment(-0.5,1),
+        alignment: Alignment(-0.5, 1),
         child: Text("你好Flutter"),
       ),
     );

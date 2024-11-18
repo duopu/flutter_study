@@ -27,15 +27,15 @@ class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Row(      
+    return Row(
       children: [
         Expanded(
           flex: 1,
-          child: IconContainer(Icons.home),  //这个元素设置宽度是没有效果的
+          child: IconContainer(Icons.home), //这个元素设置宽度是没有效果的
         ),
         IconContainer(
-            Icons.ac_unit_sharp,
-            color: Colors.orange,
+          Icons.ac_unit_sharp,
+          color: Colors.orange,
         )
       ],
     );

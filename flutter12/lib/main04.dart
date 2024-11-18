@@ -78,7 +78,7 @@ class HomePage extends StatelessWidget {
             left: 0,
             bottom: 0,
             width: size.width, //配置子元素的宽度和高度  没法使用double.infinity
-            height: 44, //配置子元素的宽度和高度  
+            height: 44, //配置子元素的宽度和高度
             child: Container(
               alignment: Alignment.center,
               color: Colors.black,

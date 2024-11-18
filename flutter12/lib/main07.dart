@@ -30,13 +30,13 @@ class HomePage extends StatelessWidget {
     //获取设备的宽度和高度
     // final size = MediaQuery.of(context).size;
 
-    return Column(
+    return const Column(
       children: [
         SizedBox(
           width: double.infinity,
           height: 40,
           child: Stack(
-            children: const [
+            children: [
               Align(
                 alignment: Alignment.topLeft,
                 child: Text("收藏"),
@@ -45,11 +45,11 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
-         SizedBox(
+        SizedBox(
           width: double.infinity,
           height: 40,
-          child: Stack( 
-            children: const [
+          child: Stack(
+            children: [
               Positioned(
                 left: 10,
                 child: Text("收藏"),

@@ -28,18 +28,18 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Flex(
-      direction:Axis.horizontal,
+      direction: Axis.horizontal,
       children: [
         Expanded(
           flex: 1,
-          child: IconContainer(Icons.home),  //这个元素设置宽度是没有效果的
+          child: IconContainer(Icons.home), //这个元素设置宽度是没有效果的
         ),
         Expanded(
           flex: 2,
           child: IconContainer(
             Icons.ac_unit_sharp,
             color: Colors.orange,
-          ),         
+          ),
         ),
       ],
     );
