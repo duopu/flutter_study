@@ -92,7 +92,7 @@ class _BoxState extends State<Box> {
         },
         child: Text(
           "$_count",
-          style: Theme.of(context).textTheme.headline2,
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
       ),
     );

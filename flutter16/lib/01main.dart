@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-       
         primarySwatch: Colors.blue,
       ),
       home: const HomePage(),
@@ -29,7 +28,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _numCount=0;
+  int _numCount = 0;
   @override
   Widget build(BuildContext context) {
     print(_numCount);
@@ -39,18 +38,21 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("$_numCount",style: Theme.of(context).textTheme.headline2,),
+            Text(
+              "$_numCount",
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
             const SizedBox(height: 60),
-            ElevatedButton(onPressed: (){
-              setState(() {
-                _numCount++;
-              });
-            }, child: const Text("增加"))
-
+            ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    _numCount++;
+                  });
+                },
+                child: const Text("增加"))
           ],
         ),
       ),
     );
   }
 }
-

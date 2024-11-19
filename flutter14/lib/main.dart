@@ -38,7 +38,7 @@ class LayoutDemo extends StatelessWidget {
                 },
                 child: const Text("普通按钮")),
             TextButton(onPressed: () {}, child: const Text("文本按钮")),
-            OutlinedButton(onPressed:() {}, child: const Text("边框按钮")),  
+            OutlinedButton(onPressed: () {}, child: const Text("边框按钮")),
             IconButton(onPressed: () {}, icon: const Icon(Icons.thumb_up))
           ],
         ),
@@ -141,7 +141,8 @@ class LayoutDemo extends StatelessWidget {
                   style: ButtonStyle(
                       shape: MaterialStateProperty.all(//圆形
                           const CircleBorder(
-                              side: BorderSide(width:2,color: Colors.yellow)))),
+                              side:
+                                  BorderSide(width: 2, color: Colors.yellow)))),
                   onPressed: () {},
                   child: const Text("圆形")),
             ),
@@ -152,14 +153,10 @@ class LayoutDemo extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             OutlinedButton(
-              style: ButtonStyle(
-                side: MaterialStateProperty.all(  //修改边框颜色
-                 const  BorderSide(width:1,color: Colors.red)
-                )
-              ),
-              onPressed: (){}, 
-              child: const Text("带边框的按钮")
-            )
+                style: ButtonStyle(side: MaterialStateProperty.all(//修改边框颜色
+                    const BorderSide(width: 1, color: Colors.red))),
+                onPressed: () {},
+                child: const Text("带边框的按钮"))
           ],
         )
       ],

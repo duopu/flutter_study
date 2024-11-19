@@ -26,14 +26,13 @@ class MyApp extends StatelessWidget {
 class LayoutDemo extends StatelessWidget {
   const LayoutDemo({Key? key}) : super(key: key);
   @override
-  Widget build(BuildContext context) {    
+  Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 2/1,
+      aspectRatio: 2 / 1,
       child: Container(
         color: Colors.red,
       ),
     );
   }
   //需求：页面上显示一个容器，宽度是屏幕的宽度，高度是容器宽度的一半
-  
 }

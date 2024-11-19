@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             Text(
               "$_numCount",
-              style: Theme.of(context).textTheme.headline2,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
             const SizedBox(height: 60),
             ElevatedButton(
@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
             _numCount++;
           });
         },
-        child:const Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }

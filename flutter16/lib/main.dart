@@ -29,22 +29,22 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final List<String> _list=[];
+  final List<String> _list = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title:const Text("Flutter App")),
+      appBar: AppBar(title: const Text("Flutter App")),
       floatingActionButton: FloatingActionButton(
-        child:const Icon(Icons.add),
-        onPressed: (){
-            //改变数据必须加上setState
-            setState(() {
-                _list.add("我是一个新增的列表");
-            });
+        child: const Icon(Icons.add),
+        onPressed: () {
+          //改变数据必须加上setState
+          setState(() {
+            _list.add("我是一个新增的列表");
+          });
         },
       ),
       body: ListView(
-        children: _list.map((v){
+        children: _list.map((v) {
           return ListTile(
             title: Text(v),
           );

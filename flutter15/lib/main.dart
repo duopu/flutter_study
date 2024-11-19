@@ -56,8 +56,8 @@ class LayoutDemo extends StatelessWidget {
           ],
         ),
         const Divider(),
-        Column(
-          children: const [
+        const Column(
+          children: [
             ListTile(title: Text("女装")),
             Divider(),
             ListTile(title: Text("手机")),
@@ -68,12 +68,11 @@ class LayoutDemo extends StatelessWidget {
         ),
         const SizedBox(height: 40),
         Padding(
-          padding:const EdgeInsets.all(40),
+          padding: const EdgeInsets.all(40),
           child: OutlinedButton.icon(
               //自适应
               style: ButtonStyle(
-                foregroundColor: MaterialStateProperty.all(Colors.black45)
-              ),
+                  foregroundColor: MaterialStateProperty.all(Colors.black45)),
               onPressed: () {},
               icon: const Icon(Icons.delete),
               label: const Text("清空历史记录")),

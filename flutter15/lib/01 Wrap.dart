@@ -30,10 +30,10 @@ class LayoutDemo extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(10),
       child: Wrap(
-        alignment:WrapAlignment.spaceAround,
+        alignment: WrapAlignment.spaceAround,
         spacing: 10, //水平间距   *
         runSpacing: 10, //垂直间距 *
-        // direction:Axis.vertical,  *  
+        // direction:Axis.vertical,  *
         children: [
           Button("第 1 集", onPressed: () {}),
           Button("第2集", onPressed: () {}),

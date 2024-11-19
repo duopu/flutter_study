@@ -21,7 +21,7 @@ class _PageViewBuilderPageState extends State<PageViewBuilderPage> {
             return Center(
                 child: Text(
               "第${index + 1}屏",
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.headlineMedium,
             ));
           }),
     );

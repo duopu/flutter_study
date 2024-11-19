@@ -35,8 +35,8 @@ class LayoutDemo extends StatelessWidget {
               borderRadius: BorderRadius.circular(10)),
           elevation: 20, //阴影值的深度
           margin: const EdgeInsets.all(10),
-          child: Column(
-            children: const [
+          child: const Column(
+            children: [
               ListTile(
                 title: Text("张三", style: TextStyle(fontSize: 28)),
                 subtitle: Text("高级软件工程师"),
@@ -58,8 +58,8 @@ class LayoutDemo extends StatelessWidget {
           elevation: 20,
           margin: const EdgeInsets.all(10),
           // color:Colors.black12,  //背景颜色
-          child: Column(
-            children: const [
+          child: const Column(
+            children: [
               ListTile(
                 title: Text("李四", style: TextStyle(fontSize: 28)),
                 subtitle: Text("Flutter高级软件工程师"),
@@ -74,14 +74,14 @@ class LayoutDemo extends StatelessWidget {
             ],
           ),
         ),
-         Card(
+        Card(
           shape: RoundedRectangleBorder(
               //Card的阴影效果
               borderRadius: BorderRadius.circular(10)),
           elevation: 20, //阴影值的深度
           margin: const EdgeInsets.all(10),
-          child: Column(
-            children: const [
+          child: const Column(
+            children: [
               ListTile(
                 title: Text("张三", style: TextStyle(fontSize: 28)),
                 subtitle: Text("高级软件工程师"),

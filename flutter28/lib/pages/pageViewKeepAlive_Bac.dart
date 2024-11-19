@@ -40,10 +40,10 @@ class _MyContainerState extends State<MyContainer> with AutomaticKeepAliveClient
     return Center(
         child: Text(
       "第${widget.num}屏",
-      style: Theme.of(context).textTheme.headline1,
+      style: Theme.of(context).textTheme.headlineMedium,
     ));
   }
-  
+
   @override
   // TODO: implement wantKeepAlive
   bool get wantKeepAlive => true;    //返回true表示缓存页面

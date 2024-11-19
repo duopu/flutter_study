@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   );
                 }),
                 duration: const Duration(seconds: 1),
-                child: Text(key:UniqueKey(),flag?"你好Flutter":"你好大地老师",style: Theme.of(context).textTheme.headline2,)),
+                child: Text(key:UniqueKey(),flag?"你好Flutter":"你好大地老师",style: Theme.of(context).textTheme.headlineMedium,)),
       )),
     );
   }

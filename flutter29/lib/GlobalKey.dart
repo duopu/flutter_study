@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   final GlobalKey _globalKey1=GlobalKey();
   final GlobalKey _globalKey2=GlobalKey();
   final GlobalKey _globalKey3=GlobalKey();
- 
+
  @override
   void initState() {
     // TODO: implement initState
@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     print(MediaQuery.of(context).orientation);
-    
+
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.refresh),
@@ -107,7 +107,7 @@ class _BoxState extends State<Box> {
         },
         child: Text(
           "$_count",
-          style: Theme.of(context).textTheme.headline2,
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
       ),
     );
