@@ -46,23 +46,22 @@ class _TabsState extends State<Tabs> {
             BottomNavigationBarItem(icon: Icon(Icons.people), label: "用户")
           ]),
       floatingActionButton: Container(
-        height: 60,  //调整FloatingActionButton的大小
+        height: 60, //调整FloatingActionButton的大小
         width: 60,
         padding: const EdgeInsets.all(5),
-        margin: const EdgeInsets.only(top: 5),  //调整FloatingActionButton的位置
+        margin: const EdgeInsets.only(top: 5), //调整FloatingActionButton的位置
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(30),
         ),
         child: FloatingActionButton(
-            backgroundColor:_currentIndex==2?Colors.red:Colors.blue,
-            child: const Icon(Icons.add), 
+            backgroundColor: _currentIndex == 2 ? Colors.red : Colors.blue,
+            child: const Icon(Icons.add),
             onPressed: () {
               setState(() {
-                _currentIndex=2;
+                _currentIndex = 2;
               });
-            }
-        ),
+            }),
       ),
       floatingActionButtonLocation:
           FloatingActionButtonLocation.centerDocked, //配置浮动按钮的位置

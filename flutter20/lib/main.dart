@@ -70,22 +70,17 @@ class _HomePageState extends State<HomePage>
             ],
             bottom: TabBar(
                 isScrollable: true,
-                indicatorColor:Colors.white,
+                indicatorColor: Colors.white,
                 indicatorWeight: 2,
-                indicatorPadding:const EdgeInsets.all(5),
-                // indicatorSize:TabBarIndicatorSize.label, 
+                indicatorPadding: const EdgeInsets.all(5),
+                // indicatorSize:TabBarIndicatorSize.label,
                 labelColor: Colors.yellow,
-                unselectedLabelColor:Colors.white,
-                labelStyle:const TextStyle(
-                  fontSize: 14
-                ),
-                unselectedLabelStyle: const TextStyle(
-                  fontSize: 12
-                ),
-                indicator:  BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(10)
-                ),
+                unselectedLabelColor: Colors.white,
+                labelStyle: const TextStyle(fontSize: 14),
+                unselectedLabelStyle: const TextStyle(fontSize: 12),
+                indicator: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(10)),
                 controller: _tabController, //注意：配置controller需要去掉TabBar上面的const
                 tabs: const [
                   Tab(

@@ -17,12 +17,13 @@ class _HomePageState extends State<HomePage>
     _tabController = TabController(length: 8, vsync: this);
     //监听_tabController的改变事件
     _tabController.addListener(() {
-      // print(_tabController.index);  
-      if (_tabController.animation!.value==_tabController.index){
-        print(_tabController.index);    //获取点击或滑动页面的索引值
+      // print(_tabController.index);
+      if (_tabController.animation!.value == _tabController.index) {
+        print(_tabController.index); //获取点击或滑动页面的索引值
       }
     });
   }
+
   //组件销毁的时候触发
   @override
   void dispose() {
@@ -86,7 +87,8 @@ class _HomePageState extends State<HomePage>
         ),
       ),
       body: TabBarView(controller: _tabController, children: [
-        KeepAliveWrapper(  //自定义的缓存组件
+        KeepAliveWrapper(
+            //自定义的缓存组件
             child: ListView(
           children: const [
             ListTile(

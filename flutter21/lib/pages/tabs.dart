@@ -25,31 +25,33 @@ class _TabsState extends State<Tabs> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 1,
-        backgroundColor: Colors.red,
-        title: const Text("Flutter App")
-      ),
+          elevation: 1,
+          backgroundColor: Colors.red,
+          title: const Text("Flutter App")),
       drawer: Drawer(
         child: Column(
           children: [
             Row(
-              children:  [
+              children: [
                 Expanded(
                     flex: 1,
                     child: UserAccountsDrawerHeader(
                       accountName: const Text("itying"),
                       accountEmail: const Text("itying@qq.com"),
-                      otherAccountsPictures:[
-                        Image.network("https://www.itying.com/images/flutter/1.png"),
-                           Image.network("https://www.itying.com/images/flutter/2.png"),
-                           Image.network("https://www.itying.com/images/flutter/3.png"),
+                      otherAccountsPictures: [
+                        Image.network(
+                            "https://www.itying.com/images/flutter/1.png"),
+                        Image.network(
+                            "https://www.itying.com/images/flutter/2.png"),
+                        Image.network(
+                            "https://www.itying.com/images/flutter/3.png"),
                       ],
-                      currentAccountPicture:const CircleAvatar(
-                        backgroundImage:NetworkImage("https://www.itying.com/images/flutter/3.png")
-                      ),
+                      currentAccountPicture: const CircleAvatar(
+                          backgroundImage: NetworkImage(
+                              "https://www.itying.com/images/flutter/3.png")),
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                            fit: BoxFit.cover,
+                              fit: BoxFit.cover,
                               image: NetworkImage(
                                   "https://www.itying.com/images/flutter/2.png"))),
                     ))
@@ -72,9 +74,8 @@ class _TabsState extends State<Tabs> {
           ],
         ),
       ),
-     
+
       body: _pages[_currentIndex],
-      
 
       bottomNavigationBar: BottomNavigationBar(
           fixedColor: Colors.red, //选中的颜色

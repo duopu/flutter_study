@@ -25,7 +25,7 @@ class _TabsState extends State<Tabs> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Flutter App")),
-      drawer: Drawer(
+      drawer: const Drawer(
         child: Column(
           children: [
             Row(
@@ -33,21 +33,20 @@ class _TabsState extends State<Tabs> {
                 Expanded(
                     flex: 1,
                     child: DrawerHeader(
-                      decoration: const BoxDecoration(
+                      decoration: BoxDecoration(
                           // color: Colors.yellow,
                           image: DecorationImage(
                               image: NetworkImage(
                                   "https://www.itying.com/images/flutter/2.png"),
                               fit: BoxFit.cover)),
                       child: Column(
-                        children: const [
+                        children: [
                           ListTile(
                             leading: CircleAvatar(
-                              backgroundImage:NetworkImage("https://www.itying.com/images/flutter/3.png")                             
-                            ),
-                            title: Text("张三",style: TextStyle(
-                              color: Colors.red
-                            )),
+                                backgroundImage: NetworkImage(
+                                    "https://www.itying.com/images/flutter/3.png")),
+                            title:
+                                Text("张三", style: TextStyle(color: Colors.red)),
                           ),
                           ListTile(
                             title: Text("邮箱：xxxx@qq.com"),
@@ -57,14 +56,14 @@ class _TabsState extends State<Tabs> {
                     ))
               ],
             ),
-            const ListTile(
+            ListTile(
               leading: CircleAvatar(
                 child: Icon(Icons.people),
               ),
               title: Text("个人中心"),
             ),
-            const Divider(),
-            const ListTile(
+            Divider(),
+            ListTile(
               leading: CircleAvatar(
                 child: Icon(Icons.settings),
               ),

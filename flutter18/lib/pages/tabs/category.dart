@@ -15,22 +15,21 @@ class _CategoryPageState extends State<CategoryPage> {
         ListTile(
           title: Text("我是一个列表"),
         ),
-         ListTile(
+        ListTile(
           title: Text("我是一个列表"),
         ),
-         ListTile(
+        ListTile(
           title: Text("我是一个列表"),
         ),
-         ListTile(
+        ListTile(
           title: Text("我是一个列表"),
         ),
-         ListTile(
+        ListTile(
           title: Text("我是一个列表"),
         ),
-         ListTile(
+        ListTile(
           title: Text("我是一个列表"),
         ),
-        
       ],
     );
   }
