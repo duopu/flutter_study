@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 //新闻页面接收上个页面穿过来的参数
 class NewsPage extends StatefulWidget {
@@ -14,7 +13,6 @@ class NewsPage extends StatefulWidget {
 class _NewsPageState extends State<NewsPage> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     print(widget.aid);
     print(widget.title);
@@ -24,7 +22,7 @@ class _NewsPageState extends State<NewsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {  
+        onPressed: () {
           //返回到上一页
           Navigator.pop(context);
         },

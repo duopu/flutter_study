@@ -15,9 +15,10 @@ Map routes = {
 };
 
 //2、配置onGenerateRoute  固定写法  这个方法也相当于一个中间件，这里可以做权限判断
-var onGenerateRoute = (RouteSettings settings) { 
+var onGenerateRoute = (RouteSettings settings) {
   final String? name = settings.name; //  /news 或者 /search
-  final Function? pageContentBuilder = routes[name];                          //  Function = (contxt) { return const NewsPage()}
+  final Function? pageContentBuilder =
+      routes[name]; //  Function = (contxt) { return const NewsPage()}
 
   if (pageContentBuilder != null) {
     if (settings.arguments != null) {

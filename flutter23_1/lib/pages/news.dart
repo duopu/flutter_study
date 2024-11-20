@@ -10,12 +10,12 @@ class NewsPage extends StatefulWidget {
 class _NewsPageState extends State<NewsPage> {
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
-      appBar:AppBar(
+    return Scaffold(
+      appBar: AppBar(
         title: const Text("新闻"),
       ),
       body: const Center(
-        child:  Text("新闻页面"),
+        child: Text("新闻页面"),
       ),
     );
   }

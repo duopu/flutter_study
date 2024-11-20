@@ -27,7 +27,6 @@ class _HomePageState extends State<HomePage>
   //组件销毁的时候触发
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
     //销毁_tabController
     _tabController.dispose();
@@ -50,7 +49,7 @@ class _HomePageState extends State<HomePage>
               isScrollable: true,
               indicatorColor: Colors.red, //底部指示器的颜色
               labelColor: Colors.red,
-              unselectedLabelColor: Colors.black, //lable未选中的颜色
+              unselectedLabelColor: Colors.black, //label未选中的颜色
               indicatorSize: TabBarIndicatorSize.label,
               controller: _tabController,
               // onTap: (index){   //只能监听点击事件 没法监听滑动

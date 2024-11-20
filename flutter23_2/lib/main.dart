@@ -4,19 +4,20 @@ import './pages/search.dart';
 import './pages/news.dart';
 import './pages/form.dart';
 import './pages/shop.dart';
+
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   //1、配置路由
-  Map routes={
-        "/": (contxt) => const Tabs(),
-        "/news": (contxt) => const NewsPage(),
-        "/search": (contxt) => const SearchPage(),
-        "/form": (contxt,{arguments}) => FormPage(arguments:arguments),
-        "/shop": (contxt,{arguments}) => ShopPage(arguments:arguments),
-   };
+  Map routes = {
+    "/": (contxt) => const Tabs(),
+    "/news": (contxt) => const NewsPage(),
+    "/search": (contxt) => const SearchPage(),
+    "/form": (contxt, {arguments}) => FormPage(arguments: arguments),
+    "/shop": (contxt, {arguments}) => ShopPage(arguments: arguments),
+  };
 
   MyApp({Key? key}) : super(key: key);
 
@@ -31,14 +32,15 @@ class MyApp extends StatelessWidget {
       // home:const Tabs() ,
       initialRoute: "/",
       //2、配置onGenerateRoute  固定写法
-      onGenerateRoute: (RouteSettings settings){    
+      onGenerateRoute: (RouteSettings settings) {
         // print(settings);
         // print(settings.name);
         // print(settings.arguments);
-     
-        final String? name = settings.name;   //  /news 或者 /search
-        final Function? pageContentBuilder = routes[name];   //  Function = (contxt) { return const NewsPage()} 
-        
+
+        final String? name = settings.name; //  /news 或者 /search
+        final Function? pageContentBuilder =
+            routes[name]; //  Function = (contxt) { return const NewsPage()}
+
         if (pageContentBuilder != null) {
           if (settings.arguments != null) {
             final Route route = MaterialPageRoute(
@@ -48,13 +50,12 @@ class MyApp extends StatelessWidget {
           } else {
             final Route route = MaterialPageRoute(
                 builder: (context) => pageContentBuilder(context));
-           
+
             return route;
           }
         }
         return null;
       },
-     
     );
   }
 }

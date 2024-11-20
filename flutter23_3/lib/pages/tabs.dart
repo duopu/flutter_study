@@ -29,23 +29,26 @@ class _TabsState extends State<Tabs> {
         child: Column(
           children: [
             Row(
-              children:  [
+              children: [
                 Expanded(
                     flex: 1,
                     child: UserAccountsDrawerHeader(
                       accountName: const Text("itying"),
                       accountEmail: const Text("itying@qq.com"),
-                      otherAccountsPictures:[
-                        Image.network("https://www.itying.com/images/flutter/1.png"),
-                           Image.network("https://www.itying.com/images/flutter/2.png"),
-                           Image.network("https://www.itying.com/images/flutter/3.png"),
+                      otherAccountsPictures: [
+                        Image.network(
+                            "https://www.itying.com/images/flutter/1.png"),
+                        Image.network(
+                            "https://www.itying.com/images/flutter/2.png"),
+                        Image.network(
+                            "https://www.itying.com/images/flutter/3.png"),
                       ],
-                      currentAccountPicture:const CircleAvatar(
-                        backgroundImage:NetworkImage("https://www.itying.com/images/flutter/3.png")
-                      ),
+                      currentAccountPicture: const CircleAvatar(
+                          backgroundImage: NetworkImage(
+                              "https://www.itying.com/images/flutter/3.png")),
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                            fit: BoxFit.cover,
+                              fit: BoxFit.cover,
                               image: NetworkImage(
                                   "https://www.itying.com/images/flutter/2.png"))),
                     ))

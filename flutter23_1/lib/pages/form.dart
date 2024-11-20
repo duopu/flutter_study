@@ -10,12 +10,12 @@ class FormPage extends StatefulWidget {
 class _FormPageState extends State<FormPage> {
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
-      appBar:AppBar(
+    return Scaffold(
+      appBar: AppBar(
         title: const Text("表单"),
       ),
       body: const Center(
-        child:  Text("表单页面"),
+        child: Text("表单页面"),
       ),
     );
   }

@@ -11,19 +11,19 @@ class CategoryPage extends StatefulWidget {
 class _CategoryPageState extends State<CategoryPage> {
   @override
   Widget build(BuildContext context) {
-   return  Center(
+    return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          ElevatedButton(onPressed: (){
-             //跳转路由
-              Navigator.of(context).push(
-                MaterialPageRoute(builder: (BuildContext context) { 
+          ElevatedButton(
+              onPressed: () {
+                //跳转路由
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (BuildContext context) {
                   return const SearchPage();
-                })
-              );
-          }, child: const Text("搜索")),
-        
+                }));
+              },
+              child: const Text("搜索")),
         ],
       ),
     );
