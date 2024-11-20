@@ -18,10 +18,12 @@ class _LoginPageState extends State<LoginPage> {
           children: [
             const Text("登录跳转演示,执行登录后返回到上一个页面"),
             const SizedBox(height: 40),
-            ElevatedButton(onPressed: () {
-              //返回到上一级页面
-              Navigator.of(context).pop();
-            }, child: const Text("执行登录"))
+            ElevatedButton(
+                onPressed: () {
+                  //返回到上一级页面
+                  Navigator.of(context).pop();
+                },
+                child: const Text("执行登录"))
           ],
         ),
       ),

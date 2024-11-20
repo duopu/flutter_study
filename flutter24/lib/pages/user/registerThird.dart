@@ -19,15 +19,15 @@ class _RegisterThirdPageState extends State<RegisterThirdPage> {
             children: [
               const Text("注册第三步"),
               const SizedBox(height: 40),
-              ElevatedButton(onPressed: () {
-                 //返回到根页面
-                  Navigator.of(context).pushAndRemoveUntil(
-                    MaterialPageRoute(builder: (BuildContext context) { 
-                        return const Tabs(index: 4);
-                     })
-                    , (route) => false);
-
-              }, child: const Text("完成注册"))
+              ElevatedButton(
+                  onPressed: () {
+                    //返回到根页面
+                    Navigator.of(context).pushAndRemoveUntil(
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return const Tabs(index: 4);
+                    }), (route) => false);
+                  },
+                  child: const Text("完成注册"))
             ],
           ),
         ));

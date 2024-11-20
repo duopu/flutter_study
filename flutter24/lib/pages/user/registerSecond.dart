@@ -18,14 +18,16 @@ class _RegisterSecondPageState extends State<RegisterSecondPage> {
             children: [
               const Text("注册第二步"),
               const SizedBox(height: 40),
-              ElevatedButton(onPressed: () {
-              //命名路由跳转
-              // Navigator.pushNamed(context, "/registerThird");
-              
-              //替换路由跳转
-              Navigator.of(context).pushReplacementNamed("/registerThird");
-              
-              }, child: const Text("下一步"))
+              ElevatedButton(
+                  onPressed: () {
+                    //命名路由跳转
+                    // Navigator.pushNamed(context, "/registerThird");
+
+                    //替换路由跳转
+                    Navigator.of(context)
+                        .pushReplacementNamed("/registerThird");
+                  },
+                  child: const Text("下一步"))
             ],
           ),
         ));

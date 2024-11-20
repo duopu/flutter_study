@@ -20,15 +20,13 @@ class _UserPageState extends State<UserPage> {
                 print("执行跳转");
                 Navigator.pushNamed(context, "/login");
               },
-              child: const Text("登录")
-          ),
+              child: const Text("登录")),
           const SizedBox(height: 40),
           ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/registerFirst");
               },
-              child: const Text("注册")
-          )
+              child: const Text("注册"))
         ],
       ),
     );

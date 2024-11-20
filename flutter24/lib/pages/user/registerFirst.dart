@@ -18,9 +18,11 @@ class _RegisterFirstPageState extends State<RegisterFirstPage> {
             children: [
               const Text("注册第一步"),
               const SizedBox(height: 40),
-              ElevatedButton(onPressed: () {
-                 Navigator.pushNamed(context, "/registerSecond");
-              }, child: const Text("下一步"))
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/registerSecond");
+                  },
+                  child: const Text("下一步"))
             ],
           ),
         ));
