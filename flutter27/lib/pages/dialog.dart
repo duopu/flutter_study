@@ -14,7 +14,6 @@ class DialogPage extends StatefulWidget {
 class _DialogPageState extends State<DialogPage> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
   }
 
@@ -140,16 +139,16 @@ class _DialogPageState extends State<DialogPage> {
   }
 
   void _myDialog() async {
-    var result=await showDialog(
+    var result = await showDialog(
         barrierDismissible: false, //表示点击灰色背景的时候是否消失弹出框
         context: context,
         builder: (context) {
           return MyDialog(
             title: "提示!",
             content: "我是一个内容",
-            onTap: (){
+            onTap: () {
               print("close");
-              Navigator.of(context).pop("我是自定义dialog关闭的事件");              
+              Navigator.of(context).pop("我是自定义dialog关闭的事件");
             },
           );
         });

@@ -10,7 +10,7 @@ class PageViewSwiper extends StatefulWidget {
 
 class _PageViewSwiperState extends State<PageViewSwiper> {
   List<Widget> list = [];
-  int _currentIndex=0;
+  int _currentIndex = 0;
   @override
   void initState() {
     // TODO: implement initState
@@ -39,8 +39,8 @@ class _PageViewSwiperState extends State<PageViewSwiper> {
           SizedBox(
             height: 200,
             child: PageView.builder(
-              onPageChanged: (index){
-               /*
+                onPageChanged: (index) {
+                  /*
               1、刚开始     _currentIndex=0
               2、index=1    _currentIndex=1
               3、index=2    _currentIndex=2
@@ -49,10 +49,10 @@ class _PageViewSwiperState extends State<PageViewSwiper> {
               6、index=5     _currentIndex=2
               7、index=6     _currentIndex=0
                */
-                setState(() {
-                  _currentIndex=index % list.length;
-                });
-              },
+                  setState(() {
+                    _currentIndex = index % list.length;
+                  });
+                },
                 itemCount: 1000,
                 itemBuilder: (context, index) {
                   return list[index % list.length];
@@ -61,23 +61,25 @@ class _PageViewSwiperState extends State<PageViewSwiper> {
                 }),
           ),
           Positioned(
-            left: 0,
-            right: 0,  //设置 left:0 right:0就会站满整行
-            bottom: 2,            
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: List.generate(list.length, (index){
-                return Container(
-                  margin: const EdgeInsets.all(5),
-                  width: 10, height: 10,
-                  decoration: BoxDecoration(
-                    color: _currentIndex==index?Colors.blue:Colors.grey,
-                    shape: BoxShape.circle  //圆
-                    // borderRadius: BorderRadius.circular(5) //圆
-                  ),
-                );
-              }).toList(),
-          ))
+              left: 0,
+              right: 0, //设置 left:0 right:0就会站满整行
+              bottom: 2,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: List.generate(list.length, (index) {
+                  return Container(
+                    margin: const EdgeInsets.all(5),
+                    width: 10,
+                    height: 10,
+                    decoration: BoxDecoration(
+                        color:
+                            _currentIndex == index ? Colors.blue : Colors.grey,
+                        shape: BoxShape.circle //圆
+                        // borderRadius: BorderRadius.circular(5) //圆
+                        ),
+                  );
+                }).toList(),
+              ))
         ],
       ),
     );

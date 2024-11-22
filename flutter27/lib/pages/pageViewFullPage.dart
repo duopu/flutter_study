@@ -12,7 +12,6 @@ class _PageViewFullPageState extends State<PageViewFullPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     for (var i = 0; i < 10; i++) {
       list.add(Center(

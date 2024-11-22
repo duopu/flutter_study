@@ -10,17 +10,17 @@ class CategoryPage extends StatefulWidget {
 class _CategoryPageState extends State<CategoryPage> {
   @override
   Widget build(BuildContext context) {
-   return  Center(
+    return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          
-          ElevatedButton(onPressed: (){
-             Navigator.pushNamed(context, "/search");
-          }, child: const Text("跳转到search")),
-         
+          ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/search");
+              },
+              child: const Text("跳转到search")),
         ],
-      ),      
+      ),
     );
   }
 }

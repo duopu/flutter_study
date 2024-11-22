@@ -4,17 +4,20 @@ class MyDialog extends Dialog {
   final String title;
   final String content;
   final Function()? onTap;
+
   const MyDialog(
       {Key? key,
       required this.title,
       required this.content,
       required this.onTap})
       : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Material(
       type: MaterialType.transparency, //设置背景透明
-      child: Center(      //主要要包裹一个组件，不然会全屏
+      child: Center(
+        //主要要包裹一个组件，不然会全屏
         child: Container(
           height: 240,
           width: 240,

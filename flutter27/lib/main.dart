@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import './routers/routers.dart';
+
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
- 
-
- const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -16,9 +15,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-      ),      
-      initialRoute: "/",       
-      onGenerateRoute: onGenerateRoute,     
+      ),
+      initialRoute: "/",
+      onGenerateRoute: onGenerateRoute,
     );
   }
 }

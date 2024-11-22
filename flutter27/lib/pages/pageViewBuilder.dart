@@ -15,7 +15,7 @@ class _PageViewBuilderPageState extends State<PageViewBuilderPage> {
         title: const Text('PageViewBuilder'),
       ),
       body: PageView.builder(
-          scrollDirection:Axis.vertical,  //垂直
+          scrollDirection: Axis.vertical, //垂直
           itemCount: 10,
           itemBuilder: (context, index) {
             return Center(

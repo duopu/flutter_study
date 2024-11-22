@@ -16,11 +16,14 @@ class _PageViewKeepAliveState extends State<PageViewKeepAlive> {
         title: const Text('Title'),
       ),
       body: PageView.builder(
-        scrollDirection: Axis.vertical,
+          scrollDirection: Axis.vertical,
           itemCount: 10,
           itemBuilder: (context, index) {
-            return KeepAliveWrapper(   //注意：如果页面比较多,缓存会耗费内存 , 注意 注意
-              child: MyContainer(num: index,),
+            return KeepAliveWrapper(
+              //注意：如果页面比较多,缓存会耗费内存 , 注意 注意
+              child: MyContainer(
+                num: index,
+              ),
             );
           }),
     );
@@ -36,10 +39,10 @@ class MyContainer extends StatefulWidget {
   State<MyContainer> createState() => _MyContainerState();
 }
 
-class _MyContainerState extends State<MyContainer>  {
+class _MyContainerState extends State<MyContainer> {
   @override
   Widget build(BuildContext context) {
-    print(widget.num);  //默认数据是没有缓存,每次滑动都会执行build
+    print(widget.num); //默认数据是没有缓存,每次滑动都会执行build
     return Center(
         child: Text(
       "第${widget.num}屏",

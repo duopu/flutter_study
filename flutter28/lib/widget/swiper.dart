@@ -38,7 +38,7 @@ class _SwiperState extends State<Swiper> {
           duration: const Duration(milliseconds: 200), curve: Curves.linear);
     });
   }
-  
+
   @override
   void dispose() {
     // TODO: implement dispose

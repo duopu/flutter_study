@@ -78,8 +78,8 @@ class _DialogPageState extends State<DialogPage> {
     print(result);
   }
 
-  void _modelBottomSheet() async{
-    var result =await showModalBottomSheet(
+  void _modelBottomSheet() async {
+    var result = await showModalBottomSheet(
         context: context,
         builder: (context) {
           return SizedBox(
@@ -115,21 +115,20 @@ class _DialogPageState extends State<DialogPage> {
             ),
           );
         });
-        print(result);
+    print(result);
   }
 
   void _toast() {
     Fluttertoast.showToast(
         msg: "提示信息",
-        toastLength: Toast.LENGTH_LONG,   //值针对 android 平台  
+        toastLength: Toast.LENGTH_LONG, //值针对 android 平台
         gravity: ToastGravity.CENTER, //方位
-        timeInSecForIosWeb: 1,  //提示时间 针对ios 和 web
-        backgroundColor: Colors.black, //背景颜色 
-        textColor: Colors.white,   //文本颜色 
-        fontSize: 16.0  //文本字体大小
-    );
+        timeInSecForIosWeb: 1, //提示时间 针对ios 和 web
+        backgroundColor: Colors.black, //背景颜色
+        textColor: Colors.white, //文本颜色
+        fontSize: 16.0 //文本字体大小
+        );
   }
-
 
   @override
   Widget build(BuildContext context) {

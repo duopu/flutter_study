@@ -9,7 +9,6 @@ import '../pages/pageViewFullPage.dart';
 import '../pages/pageViewSwiper.dart';
 import '../pages/pageViewKeepAlive.dart';
 
-
 //1、配置路由
 Map routes = {
   "/": (contxt) => const Tabs(),
@@ -18,7 +17,7 @@ Map routes = {
   "/pageViewBuilder": (contxt) => const PageViewBuilderPage(),
   "/pageViewFullPage": (contxt) => const PageViewFullPage(),
   "/pageViewSwiper": (contxt) => const PageViewSwiper(),
-    "/pageViewKeepAlive": (contxt) => const PageViewKeepAlive(),
+  "/pageViewKeepAlive": (contxt) => const PageViewKeepAlive(),
   "/shop": (contxt, {arguments}) => ShopPage(arguments: arguments),
 };
 

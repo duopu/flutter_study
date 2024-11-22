@@ -14,7 +14,8 @@ class MyDialog extends Dialog {
   Widget build(BuildContext context) {
     return Material(
       type: MaterialType.transparency, //设置背景透明
-      child: Center(      //主要要包裹一个组件，不然会全屏
+      child: Center(
+        //主要要包裹一个组件，不然会全屏
         child: Container(
           height: 240,
           width: 240,

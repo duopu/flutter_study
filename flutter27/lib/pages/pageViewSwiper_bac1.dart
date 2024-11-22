@@ -12,8 +12,8 @@ class _PageViewSwiperState extends State<PageViewSwiper> {
   List<Widget> list = [];
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
+
     list = const [
       ImagePage(
         src: "https://www.itying.com/images/flutter/1.png",

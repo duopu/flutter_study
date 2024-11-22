@@ -48,14 +48,14 @@ class _HomePageState extends State<HomePage> {
 
           //2、获取子Widget (了解)
           var boxWidget = _globalKey.currentWidget as Box;
-          print(boxWidget.color);   //值：MaterialColor(primary value: Color(0xfff44336))
+          print(boxWidget
+              .color); //值：MaterialColor(primary value: Color(0xfff44336))
 
           // 3、获取子组件渲染的属性（了解）
 
-           var renderBox= _globalKey.currentContext!.findRenderObject() as RenderBox;
-           print(renderBox.size);  //值：Size(100.0, 100.0)
-
-
+          var renderBox =
+              _globalKey.currentContext!.findRenderObject() as RenderBox;
+          print(renderBox.size); //值：Size(100.0, 100.0)
         },
       ),
       appBar: AppBar(

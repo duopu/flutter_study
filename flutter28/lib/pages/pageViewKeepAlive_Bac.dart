@@ -15,7 +15,7 @@ class _PageViewKeepAliveState extends State<PageViewKeepAlive> {
         title: const Text('Title'),
       ),
       body: PageView.builder(
-        scrollDirection: Axis.vertical,
+          scrollDirection: Axis.vertical,
           itemCount: 10,
           itemBuilder: (context, index) {
             return MyContainer(num: index);
@@ -33,10 +33,11 @@ class MyContainer extends StatefulWidget {
   State<MyContainer> createState() => _MyContainerState();
 }
 
-class _MyContainerState extends State<MyContainer> with AutomaticKeepAliveClientMixin {
+class _MyContainerState extends State<MyContainer>
+    with AutomaticKeepAliveClientMixin {
   @override
   Widget build(BuildContext context) {
-    print(widget.num);  //默认数据是没有缓存,每次滑动都会执行build
+    print(widget.num); //默认数据是没有缓存,每次滑动都会执行build
     return Center(
         child: Text(
       "第${widget.num}屏",
@@ -46,5 +47,5 @@ class _MyContainerState extends State<MyContainer> with AutomaticKeepAliveClient
 
   @override
   // TODO: implement wantKeepAlive
-  bool get wantKeepAlive => true;    //返回true表示缓存页面
+  bool get wantKeepAlive => true; //返回true表示缓存页面
 }
