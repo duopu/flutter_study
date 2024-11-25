@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import '../pages/tabs.dart';
 import '../pages/hero.dart';
 
-final Map<String,Function> routes = {
-  '/': (contxt) => const Tabs(), 
-  '/hero': (contxt,{arguments}) => HeroPage(arguments:arguments), 
+final Map<String, Function> routes = {
+  '/': (contxt) => const Tabs(),
+  '/hero': (contxt, {arguments}) => HeroPage(arguments: arguments),
 };
 
 var onGenerateRoute = (RouteSettings settings) {

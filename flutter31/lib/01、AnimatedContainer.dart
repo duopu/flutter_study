@@ -22,15 +22,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  bool flag=true;
+  bool flag = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
-        onPressed: (){
+        onPressed: () {
           setState(() {
-            flag=!flag;
+            flag = !flag;
           });
         },
       ),
@@ -39,11 +39,13 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: AnimatedContainer(
-          duration: const Duration(seconds: 1,milliseconds: 100),
+          duration: const Duration(seconds: 1, milliseconds: 100),
           width: 200,
           height: 200,
-          transform: flag?Matrix4.translationValues(0, 0, 0):Matrix4.translationValues(-100, 0, 0) ,
-          color: Colors.yellow, 
+          transform: flag
+              ? Matrix4.translationValues(0, 0, 0)
+              : Matrix4.translationValues(-100, 0, 0),
+          color: Colors.yellow,
         ),
       ),
     );

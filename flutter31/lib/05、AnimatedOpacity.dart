@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: AnimatedOpacity(
-          opacity: flag?0.2:1,
+          opacity: flag ? 0.2 : 1,
           duration: const Duration(seconds: 1),
           curve: Curves.easeIn,
           child: Container(

@@ -15,13 +15,13 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-   return const Center(
-        child: Text("你好Flutter 我是一个自定义组件",
-            textDirection: TextDirection.ltr,
-            style: TextStyle(
-                color: Colors.red,
-                // color: Color.fromRGBO(244, 244, 123, 1),
-                fontSize: 40)),
-      );
+    return const Center(
+      child: Text("你好Flutter 我是一个自定义组件",
+          textDirection: TextDirection.ltr,
+          style: TextStyle(
+              color: Colors.red,
+              // color: Color.fromRGBO(244, 244, 123, 1),
+              fontSize: 40)),
+    );
   }
 }

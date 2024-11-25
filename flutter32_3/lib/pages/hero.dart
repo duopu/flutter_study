@@ -12,13 +12,13 @@ class HeroPage extends StatefulWidget {
 class _HeroPageState extends State<HeroPage> {
   List listData = [];
   late int currentPage;
-  int initialPage=0;
+  int initialPage = 0;
   @override
   void initState() {
     super.initState();
     listData = widget.arguments["listData"];
     initialPage = widget.arguments["initialPage"] - 1;
-    currentPage=widget.arguments["initialPage"];
+    currentPage = widget.arguments["initialPage"];
   }
 
   @override
@@ -40,7 +40,7 @@ class _HeroPageState extends State<HeroPage> {
                     onPageChanged: (index) {
                       print(index);
                       setState(() {
-                        currentPage=index+1;
+                        currentPage = index + 1;
                       });
                     },
                     builder: ((context, index) {
@@ -59,7 +59,7 @@ class _HeroPageState extends State<HeroPage> {
                     alignment: Alignment.center,
                     child: Text(
                       "${currentPage}/${listData.length}",
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: Colors.white,
                           fontSize: 16,
                           decoration: TextDecoration.none),

@@ -22,7 +22,9 @@ class _HomePageState extends State<HomePage> {
                   color: const Color.fromRGBO(233, 233, 233, 0.9), width: 1)),
           child: Column(
             children: <Widget>[
-              Hero(tag: value['imageUrl'], child: Image.network(value['imageUrl'])),
+              Hero(
+                  tag: value['imageUrl'],
+                  child: Image.network(value['imageUrl'])),
               const SizedBox(height: 10),
               Text(
                 value['title'],

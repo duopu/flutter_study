@@ -39,7 +39,6 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Stack(
         children: [
-          
           ListView(
             children: const [
               ListTile(
@@ -48,13 +47,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ListTile(
                 title: Text("我是一个列表"),
               ),
-               ListTile(
+              ListTile(
                 title: Text("我是一个列表"),
               ),
               ListTile(
                 title: Text("我是一个列表"),
               ),
-               ListTile(
+              ListTile(
                 title: Text("我是一个列表"),
               ),
               ListTile(
@@ -63,15 +62,15 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
           AnimatedPositioned(
-            curve: Curves.linear,
-            right: flag?10:300,
-            top: flag?10:560,
-            duration: const Duration(seconds: 1,milliseconds: 500),
-            child: Container(
-            width: 60,
-            height: 60,
-            color: Colors.blue,
-          )),
+              curve: Curves.linear,
+              right: flag ? 10 : 300,
+              top: flag ? 10 : 560,
+              duration: const Duration(seconds: 1, milliseconds: 500),
+              child: Container(
+                width: 60,
+                height: 60,
+                color: Colors.blue,
+              )),
         ],
       ),
     );

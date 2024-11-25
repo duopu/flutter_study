@@ -33,6 +33,7 @@ class _HomePageState extends State<HomePage> {
   bool flag = true;
   List<String> list = ["第一条", "第二条"];
 
+  // 构建item
   Widget _buildItem(index) {
     return ListTile(
       key: ValueKey(index),
@@ -47,6 +48,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  // 删除动画
   _deleteItem(index) {
     if (flag == true) {
       flag = false;
