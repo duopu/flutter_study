@@ -28,31 +28,30 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
- List<Widget> list=[];
-  final GlobalKey _globalKey1=GlobalKey();
-  final GlobalKey _globalKey2=GlobalKey();
-  final GlobalKey _globalKey3=GlobalKey();
+  List<Widget> list = [];
+  final GlobalKey _globalKey1 = GlobalKey();
+  final GlobalKey _globalKey2 = GlobalKey();
+  final GlobalKey _globalKey3 = GlobalKey();
 
- @override
+  @override
   void initState() {
     // TODO: implement initState
     super.initState();
-      list =  [  //注意：常量没法改变
+    list = [
+      //注意：常量没法改变
       //1、可以保存状态 2、可以排序
-        Box(
-          key: _globalKey1,
-          color: Colors.red,
-        ),
-        Box(
-          key: _globalKey2,   //唯一值 每次允许的时候会随机生成
-          color: Colors.yellow,
-        ),
-        Box(
-          key:_globalKey3,
-          color: Colors.blue
-        )
-      ];
+      Box(
+        key: _globalKey1,
+        color: Colors.red,
+      ),
+      Box(
+        key: _globalKey2, //唯一值 每次允许的时候会随机生成
+        color: Colors.yellow,
+      ),
+      Box(key: _globalKey3, color: Colors.blue)
+    ];
   }
+
   @override
   Widget build(BuildContext context) {
     print(MediaQuery.of(context).orientation);
@@ -60,9 +59,9 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.refresh),
-        onPressed: (){
+        onPressed: () {
           setState(() {
-            list.shuffle();  //shuffle:打乱list元素的顺序
+            list.shuffle(); //shuffle:打乱list元素的顺序
           });
         },
       ),
@@ -70,13 +69,15 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Title'),
       ),
       body: Center(
-        child: MediaQuery.of(context).orientation==Orientation.portrait?Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: list,
-        ):Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: list,
-        ),
+        child: MediaQuery.of(context).orientation == Orientation.portrait
+            ? Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: list,
+              )
+            : Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: list,
+              ),
       ),
     );
   }
@@ -84,7 +85,7 @@ class _HomePageState extends State<HomePage> {
 
 class Box extends StatefulWidget {
   final Color color;
-  const Box({Key? key, required this.color}):super(key:key);
+  const Box({Key? key, required this.color}) : super(key: key);
 
   @override
   State<Box> createState() => _BoxState();

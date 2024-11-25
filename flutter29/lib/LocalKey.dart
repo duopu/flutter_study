@@ -28,29 +28,27 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<Widget> list =  [  //注意：常量没法改变
-  //1、可以保存状态 2、可以排序
-   const Box(
+  List<Widget> list = [
+    //注意：常量没法改变
+    //1、可以保存状态 2、可以排序
+    const Box(
       key: ValueKey('1'),
       color: Colors.red,
     ),
     Box(
-      key: UniqueKey(),   //唯一值 每次运行的时候会随机生成
+      key: UniqueKey(), //唯一值 每次运行的时候会随机生成
       color: Colors.yellow,
     ),
-    const Box(
-      key: ObjectKey(Box(color: Colors.blue)),
-      color: Colors.blue
-    )
+    const Box(key: ObjectKey(Box(color: Colors.blue)), color: Colors.blue)
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.refresh),
-        onPressed: (){
+        onPressed: () {
           setState(() {
-            list.shuffle();  //shuffle:打乱list元素的顺序
+            list.shuffle(); //shuffle:打乱list元素的顺序
           });
         },
       ),
@@ -69,7 +67,7 @@ class _HomePageState extends State<HomePage> {
 
 class Box extends StatefulWidget {
   final Color color;
-  const Box({Key? key, required this.color}):super(key:key);
+  const Box({Key? key, required this.color}) : super(key: key);
 
   @override
   State<Box> createState() => _BoxState();

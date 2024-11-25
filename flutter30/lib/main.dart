@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  _deleteItem(index) {   
+  _deleteItem(index) {
     if (flag == true) {
       flag = false;
       //执行删除
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Title'),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
         onPressed: () {
           list.add("我是新增的数据");
           _globalKey.currentState!.insertItem(list.length - 1);
@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
           key: _globalKey,
           initialItemCount: list.length,
           itemBuilder: ((context, index, animation) {
-             //animation的值是从0到1
+            //animation的值是从0到1
             return FadeTransition(
               opacity: animation,
               child: _buildItem(index),
